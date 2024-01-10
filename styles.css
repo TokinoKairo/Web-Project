@@ -1,0 +1,138 @@
+﻿/* Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  /* box size will remain stable */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #333;
+  color: #fff; 
+  margin: 0;
+  padding: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2017/11/18/01/16/global-warming-2958988_960_720.jpg"); 
+  background-position: center center; /* initial-position */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.description {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00ffcc; 
+}
+
+p {
+  margin-bottom: 15px;
+}
+.description{
+  text-align:center;
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: calc(100% - 10px); /* adjust the size of an element relative to its container */
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.8); 
+  color: #333; 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #00ffcc; /* border color when focusing */
+}
+.second-section label{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.final-section{
+  text-align:center;
+}
+
+.input-checkbox{
+  margin-right:5px;
+}
+
+.submit-button {
+  background-color: #00ffcc;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer; /* change the cursor */
+  min-width: 100px;
+  margin: 1em auto;
+  display: inline-block;
+}
+
+footer {
+  max-width: 800px; 
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2); 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  
+}
+
+/*Links*/  
+a, a:visited {
+  color: #aacaff;
+}
+ 
+a:hover {
+  color: yellow;
+}
+ 
+a:active {
+  color: red;
+}

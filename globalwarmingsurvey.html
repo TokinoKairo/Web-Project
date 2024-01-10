@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Global Warming Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+    <h1 id="title">Global Warming Survey Form</h1>
+    <p class="description" id="description"> Thank you for taking the time to complete this survey, complete the required spaces to submit, depending on the question you can choose one or more answers that fit your personal opinion.</p>
+    <form id="survey-form" method="post">
+      <div class="Personal-info">
+      <fieldset>
+        <label id="name-label" for="name">Name <input id="name" name="name" type="text" required placeholder="Enter your name"/></label>
+        <label id="email-label" for="email">Email <input id="email" name="email" type="email" required placeholder="Enter your email"/></label>
+        <label id="number-label" for="number">Age (optional) <input id="number" type="number" name="age" min="18" max="99" placeholder="Enter your age"/></label>
+        <label for="dropdown" required>What is your academic background?
+          <select id="dropdown" name="academic-background">
+            <option disabled selected value>Select an option</option>
+            <option value="Primary">Primary School</option>
+            <option value="Highschool">High School</option>
+            <option value="Bachelor">Bachelor's Degree</option>
+            <option value="Master">Master's Degree</option>
+            <option value="PhD">PhD</option>
+            <option value="No-answer">Prefer not to say</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      </div>
+      <div class="first-section">
+      <fieldset>
+        <label for="dropdown1">What measure do you believe would have the most significant impact on reducing greenhouse gas emissions?
+          <select id="dropdown1" name="gas-emissions">
+            <option disabled selected value>Select an option</option>
+            <option value="1">Increased use of renewable energy</option>
+            <option value="2">Promoting public transportation</option>
+            <option value="3">Implementing energy efficiency policies</option>
+            <option value="4">Reducing food waste</option>
+            <option value="5">Promoting carbon capture and storage</option>
+          </select>
+        </label>
+        <label for="dropdown2">Which of these issues do you consider most concerning as a consequence of climate change?
+          <select id="dropdown2" name="consequence">
+            <option disabled selected value>Select an option</option>
+            <option value="1">Rising sea levels and its effects on coastlines</option>
+            <option value="2">Loss of biodiversity and species extinction</option>
+            <option value="3">Extreme changes in weather patterns</option>
+          </select>
+        </label>
+        <label for="dropdown3">In which sector do you think urgent actions should be taken to reduce its environmental impact?
+          <select id="dropdown3" name="impact">
+            <option disabled selected value>Select an option</option>
+            <option value="1">Industry and manufacturing</option>
+            <option value="2">Agriculture and livestock</option>
+            <option value="3">Household energy consumption</option>
+          </select>
+        </label>
+      </fieldset>
+      </div>
+      <div class="second-section">
+      <fieldset>
+        <p>Do you think it is likely that climate change is primarily caused by human activity?</p>
+          <label>
+            <input name="human-activity" value="probably" type="radio"/> Probably</label>
+          <label>
+            <input name="human-activity" value="maybe" type="radio"/> Maybe</label>
+          <label>
+            <input name="human-activity" value="not-likely" type="radio"/> Not Likely</label>
+          <label>
+            <input name="human-activity" value="not-sure" type="radio" checked/> Not sure</label>
+        <p>Do you consider the consequences of climate change an urgent concern for society?</p>
+          <label>
+            <input name="urgent" value="probably" type="radio"/> Probably</label>
+          <label>
+            <input name="urgent" value="maybe" type="radio"/> Maybe</label>
+          <label>
+            <input name="urgent" value="not-likely" type="radio"/> Not Likely</label>
+          <label>
+            <input name="urgent" value="not-sure" type="radio" checked/> Not sure</label>
+        <p>Are you uncertain about the impact of climate change on future generations?</p>
+          <label>
+            <input name="future-impact" value="probably" type="radio"/> Probably</label>
+          <label>
+            <input name="future-impact" value="maybe" type="radio"/> Maybe</label>
+          <label>
+            <input name="future-impact" value="not-likely" type="radio"/> Not Likely</label>
+          <label>
+            <input name="future-impact" value="not-sure" type="radio" checked/> Not sure</label>
+        <p>Do you believe that technological innovations will play a crucial role in mitigating climate change?</p>
+          <label>
+            <input name="innovations" value="probably" type="radio"/> Probably</label>
+          <label>
+            <input name="innovations" value="maybe" type="radio"/> Maybe</label>
+          <label>
+            <input name="innovations" value="not-likely" type="radio"/> Not Likely</label>
+          <label>
+            <input name="innovations" value="not-sure" type="radio" checked/> Not sure</label>
+        <p>Are you willing to change your daily habits to reduce your impact on global warming?</p>
+          <label>
+            <input name="daily-habits" value="probably" type="radio"/> Probably</label>
+          <label>
+            <input name="daily-habits" value="maybe" type="radio"/> Maybe</label>
+          <label>
+            <input name="daily-habits" value="not-likely" type="radio"/> Not Likely</label>
+          <label>
+            <input name="daily-habits" value="not-sure" type="radio" checked/> Not sure</label>
+      </fieldset>
+      </div>
+      <div class="third-section">
+      <fieldset>
+       <p>What would you be willing to do to mitigate climate change? (Select all that apply)</p> 
+       <label><input name="prefer" value="meat-consumption" type="checkbox" class="input-checkbox"
+            /> Reduce meat and animal product consumption</label>
+       <label><input name="prefer" value="transportation" type="checkbox" class="input-checkbox"
+            /> Utilize more sustainable transportation methods (bicycle, walking, public transport)</label>
+       <label><input name="prefer" value="energy-consumption" type="checkbox" class="input-checkbox"
+            /> Decrease energy consumption at home (by turning off lights, using efficient appliances)</label>
+       <label><input name="prefer" value="reforestation" type="checkbox" class="input-checkbox"
+            /> Engage in reforestation or environmental cleanup efforts</label>
+       <label><input name="prefer" value="plastic" type="checkbox" class="input-checkbox"
+            /> Minimize the use of plastic and other single-use items</label>
+       <label><input name="prefer" value="energy-sources" type="checkbox" class="input-checkbox"
+            /> Transition to renewable energy sources at home (such as solar or wind power)</label>
+       <label><input name="prefer" value="informed-purchases" type="checkbox" class="input-checkbox"
+            /> Make informed purchases and minimize food waste.</label>
+       <label><input name="prefer" value="support-laws" type="checkbox" class="input-checkbox"
+            /> Promote recycling and reusing items you no longer use</label>
+       <label><input name="prefer" value="education" type="checkbox" class="input-checkbox"
+            /> Educate others about climate change and its consequences</label>
+       <label><input name="prefer" value="support-laws" type="checkbox" class="input-checkbox"
+            /> Support policies and laws aimed at combating climate change</label>
+      </fieldset>
+      </div>
+      <div class="fourth-section">
+      <fieldset>
+        <p>How do you think government policies can better address the challenges posed by global warming?</p>
+          <textarea id="goverment-policies" class="input-textarea" name="goverment-policies" rows="5" placeholder="Write your ideas here..."></textarea>
+        <p>Any comments or suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment" rows="3" placeholder="Enter your comment here..."></textarea>
+      </fieldset>
+      </div>
+      <div class="final-section">
+      <fieldset>
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </fieldset>
+      </div>
+    </form>
+  </div>
+  <footer>
+    <p>© 2024 - Global Warming Survey</p>
+    <p>Learn more about the topic by <a href="https://en.wikipedia.org/wiki/Climate_change">clicking here</a></p>
+  </footer>
+  </body>
+</html>
